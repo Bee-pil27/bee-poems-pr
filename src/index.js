@@ -1,6 +1,4 @@
-function displayPoem(response) {
-  console.log("poem generated");
-
+function displayQuote(response) {
   new Typewriter("#sweet-poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -9,7 +7,7 @@ function displayPoem(response) {
   });
 }
 
-function generatePoem(event) {
+function generateQuote(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#user-instructions");
@@ -19,16 +17,12 @@ function generatePoem(event) {
   let prompt = `Generate a poem about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let generatorElement = document.querySelector("#sweet-poem");
+  let generatorElement = document.querySelector("#sweet-quote");
   generatorElement.classList.remove("hidden");
   generatorElement.innerHTML = `<div class="generating">⏳Generating a poem about ${instructionsInput.value}</div>`;
-
-  console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayPoem);
 }
 
-let generatorPoemElement = document.querySelector("#generate-poem");
-generatorPoemElement.addEventListener("submit", generatePoem);
+let generatorQuoteElement = document.querySelector("#generate-quote");
+generatorQuoteElement.addEventListener("submit", generateQuote);
