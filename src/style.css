@@ -75,6 +75,16 @@ form {
   display: none;
 }
 
+.generating {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 13px;
