@@ -1,5 +1,5 @@
 function displayQuote(response) {
-  new Typewriter("#sweet-quote", {
+  new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -17,7 +17,7 @@ function generateQuote(event) {
   let prompt = `Generate a quote about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let generatorElement = document.querySelector("#sweet-quote");
+  let generatorElement = document.querySelector("#quote");
   generatorElement.classList.remove("hidden");
   generatorElement.innerHTML = `<div class="generating">⏳Generating a quote about ${instructionsInput.value}</div>`;
 
