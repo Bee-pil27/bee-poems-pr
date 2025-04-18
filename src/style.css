@@ -1,3 +1,8 @@
+.social-link-bar .vertical-line {
+  height: 120px;
+  border-left: 1px solid pink;
+  margin-left: 38px;
+}
 body {
   background-color: whitesmoke;
   font-family: Helvetica, Arial, sans-serif;

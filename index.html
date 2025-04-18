@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Document</title>
@@ -25,38 +32,39 @@
           ></a>
         </li>
       </ul>
+
+      <header>
+        <h1>AI Quote Generator💮</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="generate-quote">
+            <input
+              type="text"
+              placeholder="Enter the topic of the quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: The Alchemist, Strong women</div>
+        </div>
+        <div class="quote hidden" id="quote">
+          <br />
+        </div>
+      </main>
+
+      <footer>
+        This AI project is open sourced on Github
+        <a href="https://github.com/Bee-pil27/bee-poems-pr" target="_blank"
+          >Bongeka Hadebe</a
+        >
+      </footer>
     </div>
-    <header>
-      <h1>AI Quote Generator💮</h1>
-    </header>
-
-    <main>
-      <div class="form-container">
-        <form id="generate-quote">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="hint">i.e: The Alchemist, Strong women</div>
-      </div>
-      <div class="quote hidden" id="quote">
-        <br />
-      </div>
-    </main>
-
-    <footer>
-      This AI project is open sourced on Github
-      <a href="https://github.com/Bee-pil27/bee-poems-pr" target="_blank"
-        >Bongeka Hadebe</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
