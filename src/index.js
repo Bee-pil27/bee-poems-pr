@@ -26,3 +26,7 @@ function generateQuote(event) {
 
 let generatorQuoteElement = document.querySelector("#generate-quote");
 generatorQuoteElement.addEventListener("submit", generateQuote);
+
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

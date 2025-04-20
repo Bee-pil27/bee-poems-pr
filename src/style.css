@@ -4,7 +4,7 @@
   margin-left: 38px;
 }
 body {
-  background-color: whitesmoke;
+  background-color: rgb(57, 55, 55);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -18,8 +18,10 @@ header {
 
 .image-container {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/317/original/paulo.jpg?1739336934);
-  width: 1300px;
-  min-height: 700px;
+
+  width: 1400px;
+  min-height: 800px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,13 +35,6 @@ h1 {
   color: black;
 }
 
-.form-container {
-  background-color: rgb(185, 109, 171);
-  padding: 15px 20px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
 form {
   display: flex;
 }
@@ -62,7 +57,7 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: greenyellow;
+  background: rgb(174, 142, 169);
   color: white;
   border: none;
   width: 150px;
