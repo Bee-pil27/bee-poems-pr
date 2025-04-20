@@ -12,13 +12,17 @@ a {
   color: rgb(193, 140, 148);
 }
 
-.container {
-  margin: 120px auto;
-  max-width: 600px;
-}
-
 header {
   margin-bottom: 30px;
+}
+
+.image-container {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/317/original/paulo.jpg?1739336934);
+  width: 1300px;
+  min-height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
